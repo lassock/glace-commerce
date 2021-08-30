@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">pratiquedelimdi23</string>
+    <string name="donuts">Droid desserts</string>
+    <string name="ice_cream_sandwiches">contentDescription Ice cream sandwiches have chocolate wafers and vanilla filling.</string>
+    <string name="froyo">FroYo is premium self-serve frozen yogurt.</string>
+    <string name="donut">Donuts are glazed and sprinkled with candy.</string>
+    <string name="donut_order_message">You ordered a donut.</string>
+    <string name="ice_cream_order_message">You ordered an ice cream sandwich.</string>
+    <string name="froyo_order_message">You ordered a FroYo.</string>
+    <string name="same_day_messenger_service">Le liquide</string>
+    <string name="next_day_ground_delivery">Par cheque</string>
+    <string name="pick_up">OM/MM</string>
+    <string name="donut1">Donuts are glazed and sprinkled with candy 1500f</string>
+    <string name="burger_cmr">le burger a la camerounaise tres bon 2000f</string>
+    <string name="ice_cream_sandwiches1">Ice cream sandwiches have chocolate wafers and vanilla filling 3000f</string>
+    <string name="cake_description">le cake a la camerounaise tres bon 1500f</string>
+    <string name="froyo1">FroYo is premium self-serve frozen yogurt 1500f </string>
+    <string-array name="labels_array">
+        <item>Home</item>
+        <item>Work</item>
+        <item>Mobile</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>

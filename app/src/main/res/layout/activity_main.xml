@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+        <ImageButton
+            android:id="@+id/froyo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/froyo1"
+            android:onClick="showFroyoOrder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ice_cream_description"
+            app:srcCompat="@drawable/froyo_circle" />
+
+        <ImageButton
+            android:id="@+id/cake"
+            android:layout_width="138dp"
+            android:layout_height="92dp"
+            android:layout_marginTop="36dp"
+            android:contentDescription="@string/cake_description"
+            android:onClick="showgateau"
+            app:layout_constraintBottom_toBottomOf="@+id/ice_cream"
+            app:layout_constraintStart_toStartOf="@+id/buder"
+            app:layout_constraintTop_toBottomOf="@+id/burger_decription"
+            app:srcCompat="@drawable/cake"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/froyo_description"
+            android:layout_width="131dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/froyo1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/froyo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Menu du jour"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ice_cream_description"
+            android:layout_width="135dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/ice_cream_order_message"
+            app:layout_constraintEnd_toEndOf="@+id/ice_cream"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ice_cream" />
+
+        <TextView
+            android:id="@+id/id_cake"
+            android:layout_width="127dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/cake_description"
+            app:layout_constraintStart_toStartOf="@+id/cake"
+            app:layout_constraintTop_toBottomOf="@+id/cake" />
+
+        <TextView
+            android:id="@+id/donut_description"
+            android:layout_width="135dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/donut1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/donut" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="288dp"
+            android:layout_marginTop="108dp"
+            android:clickable="true"
+            android:onClick="onClick"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_cake"
+            app:srcCompat="@drawable/ic_user" />
+
+        <TextView
+            android:id="@+id/burger_decription"
+            android:layout_width="138dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/burger_cmr"
+            app:layout_constraintStart_toStartOf="@+id/buder"
+            app:layout_constraintTop_toBottomOf="@+id/buder" />
+
+        <ImageButton
+            android:id="@+id/buder"
+            android:layout_width="135dp"
+            android:layout_height="79dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="@string/burger_cmr"
+            android:onClick="showbuger"
+            app:layout_constraintBottom_toBottomOf="@+id/donut"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:srcCompat="@drawable/burger" />
+
+        <ImageButton
+            android:id="@+id/ice_cream"
+            android:layout_width="134dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/ice_cream_sandwiches1"
+            android:onClick="showIceCreamOrder"
+            app:layout_constraintEnd_toEndOf="@+id/donut_description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/donut_description"
+            app:srcCompat="@drawable/icecream_circle" />
+
+        <ImageButton
+            android:id="@+id/donut"
+            android:layout_width="135dp"
+            android:layout_height="86dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/donut1"
+
+            android:onClick="showDonutOrder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:srcCompat="@drawable/donut_circle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
